@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xwV-F9-siM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp3-zS-cbG">
+                                <rect key="frame" x="15" y="285" width="180" height="30"/>
+                                <state key="normal" title="下载QQ"/>
+                                <connections>
+                                    <action selector="downloadQQ:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h2i-5C-35A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve3-uv-cBE">
+                                <rect key="frame" x="210" y="285" width="180" height="30"/>
+                                <state key="normal" title="下载PDF"/>
+                                <connections>
+                                    <action selector="downloadPDF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sVy-GF-nIy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpd-xV-gtR">
+                                <rect key="frame" x="405" y="285" width="180" height="30"/>
+                                <state key="normal" title="下载页面"/>
+                                <connections>
+                                    <action selector="downloadPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eQh-fv-moE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mpd-xV-gtR" firstAttribute="width" secondItem="cp3-zS-cbG" secondAttribute="width" id="G3c-K6-RiH"/>
+                            <constraint firstAttribute="trailing" secondItem="Mpd-xV-gtR" secondAttribute="trailing" constant="15" id="HF8-52-BPW"/>
+                            <constraint firstItem="Mpd-xV-gtR" firstAttribute="leading" secondItem="Ve3-uv-cBE" secondAttribute="trailing" constant="15" id="I8T-Vr-65U"/>
+                            <constraint firstItem="cp3-zS-cbG" firstAttribute="width" secondItem="Ve3-uv-cBE" secondAttribute="width" id="K7z-cr-Q8U"/>
+                            <constraint firstItem="Mpd-xV-gtR" firstAttribute="top" secondItem="cp3-zS-cbG" secondAttribute="top" id="X7L-ZQ-Bfm"/>
+                            <constraint firstItem="cp3-zS-cbG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="bVK-yw-Vwy"/>
+                            <constraint firstItem="cp3-zS-cbG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cUr-rU-59O"/>
+                            <constraint firstItem="Ve3-uv-cBE" firstAttribute="leading" secondItem="cp3-zS-cbG" secondAttribute="trailing" constant="15" id="uLs-Ki-wD5"/>
+                            <constraint firstItem="Ve3-uv-cBE" firstAttribute="top" secondItem="cp3-zS-cbG" secondAttribute="top" id="wfx-bq-lF2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mqV-DB-DsJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="326"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6zU-bz-BWS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xwV-F9-siM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2sH-rA-96S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xw6-wI-cK6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H68-TY-0KX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582" y="326"/>
+        </scene>
+    </scenes>
+</document>

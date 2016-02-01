@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1509" minimumToolsVersion="Xcode 7.0">
+    <entity name="DownloadInfoModel" representedClassName="DownloadInfoModel" syncable="YES">
+        <attribute name="completeUnitCount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFinished" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="resumeData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="totalUnitCount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlString" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DownloadInfoModel" positionX="-63" positionY="-18" width="128" height="150"/>
+    </elements>
+</model>
